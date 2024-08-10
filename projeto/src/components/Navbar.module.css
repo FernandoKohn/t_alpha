@@ -1,0 +1,77 @@
+.main {
+    display: flex;
+    height: 60px;
+    font-family: nimbus;
+    border-bottom: 2px solid rgba(224, 224, 224, 0.349);
+    padding-left: 15px;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    color: #0060B1;
+}
+
+#arrow {
+    font-size: 2em;
+}
+
+.userInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    gap: 40px;
+}
+
+.bellDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    position: relative;
+}
+
+.bellDiv img {
+    width: 50%;
+}
+
+.bellDiv:hover {
+    cursor: pointer;
+}
+
+#logOutButton {
+    font-size: 1.6em;
+}
+
+#logOutButton:hover {
+    cursor: pointer;
+}
+
+
+.redBall {
+    position: absolute;
+    top: 10px;
+    left: 26px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: crimson;
+}
+
+.userPic {
+    width:40px;
+}
+
+.userPicDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}

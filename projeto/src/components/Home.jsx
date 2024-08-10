@@ -4,6 +4,8 @@ import styles from "./Home.module.css"
 
 export function Home() {
 
+  console.log(localStorage)
+
   return (
     <div className={styles.main}>
       <h1>Dê um <i id={styles.arrow} className='bx bx-up-arrow-alt' ></i><span id={styles.arrow}>UP</span></h1>

@@ -1,15 +1,15 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { Outlet } from "react-router-dom"
 
 
 export const Root = () => {
 
-  const [isLogged, setIsLogged] = useState()
+  const [token, setToken] = useState(null)
 
   return (
     <div>
       <div>
-        <Outlet context={{ isLogged, setIsLogged }} />
+        <Outlet context={{ token, setToken }} />
       </div>
     </div>
   )

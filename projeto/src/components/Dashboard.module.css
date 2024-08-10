@@ -1,0 +1,64 @@
+.content {
+    display: flex;
+    font-family: nimbus;
+}
+
+.leftDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    width: 300px;
+    padding-top: 7%;
+}
+
+.leftDiv form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.leftDiv form button {
+    width: 100%;
+    height: 50px;
+}
+
+.rightDiv {
+    padding-top: 60px;
+    padding-left: 20px;
+}
+
+.line {
+    margin-top: 15px;
+    width: 800px;
+    height: 2px;
+    background-color: rgba(0, 0, 0, 0.233);
+}
+
+.produtoSection {
+    padding-top: 25px;
+    width:1590px;
+    gap: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.productCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgba(0, 0, 0, 0.137);
+    width: 375px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.icons {
+    display: flex;
+    gap: 15px;
+}

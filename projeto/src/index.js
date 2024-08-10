@@ -8,6 +8,8 @@ import { Home } from './components/Home';
 import { Login } from './components/Login'
 import { ProtectedLogin } from './components/utils/ProtectedLogin';
 import { Register } from './components/Register';
+import { Dashboard } from './components/Dashboard';
+import { ProtectedDashboard } from './components/utils/ProtectedDashboard';
 
 const router = createBrowserRouter([
   {
@@ -22,16 +24,22 @@ const router = createBrowserRouter([
         index: true
       },
       {
-        element: <ProtectedLogin/>,
+        path: "/Registrar",
+        element: <Register />,
+        errorElement: <ErrorPage />
+      },
+      {
+        path: "/Login",
+        element: <Login />,
+        errorElement: <ErrorPage />
+      },
+      {
+        element: <ProtectedDashboard />,
+        errorElement: <ErrorPage />,
         children: [
           {
-            path: "/Registrar",
-            element: <Register/>,
-            errorElement: <ErrorPage />
-          },
-          {
-            path: "/Login",
-            element: <Login/>,
+            path: "/Dashboard",
+            element: <Dashboard />,
             errorElement: <ErrorPage />
           }
         ]
