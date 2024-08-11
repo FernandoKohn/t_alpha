@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/t-Alpha_interview/static/css/main.6f479ece.css",
+    "main.js": "/t-Alpha_interview/static/js/main.8b68e57f.js",
+    "static/media/Denso Regular.otf": "/t-Alpha_interview/static/media/Denso Regular.ce4fa7bb4955586d4315.otf",
+    "static/media/Denso Bold.otf": "/t-Alpha_interview/static/media/Denso Bold.446e9d4848c6f69beedd.otf",
+    "static/media/NimbusSanL-Reg.otf": "/t-Alpha_interview/static/media/NimbusSanL-Reg.a520cb1a50f044f5d58c.otf",
+    "index.html": "/t-Alpha_interview/index.html",
+    "main.6f479ece.css.map": "/t-Alpha_interview/static/css/main.6f479ece.css.map",
+    "main.8b68e57f.js.map": "/t-Alpha_interview/static/js/main.8b68e57f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6f479ece.css",
+    "static/js/main.8b68e57f.js"
+  ]
+}
