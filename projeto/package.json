@@ -1,7 +1,7 @@
 {
   "name": "projeto",
   "version": "0.1.0",
-  "homepage": "https://fernandokohn.github.io/t_alpha",
+  "homepage": "https://fernandokohn.github.io/",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.13.0",
