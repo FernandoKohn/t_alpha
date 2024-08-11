@@ -17,7 +17,7 @@ export const Navbar = () => {
         <div className={styles.main}>
             <div className={styles.logo}>
                 <i id={styles.arrow} className='bx bx-up-arrow-alt'></i>
-                <Link to={"/"}>
+                <Link to={"/t_alpha"}>
                     <h1>UP</h1>
                 </Link>
             </div>

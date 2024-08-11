@@ -13,12 +13,12 @@ import { ProtectedDashboard } from './components/utils/ProtectedDashboard';
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/t_alpha",
     element: <Root />,
     errorElement: <ErrorPage />,
     children: [
       {
-        path: "/",
+        path: "/t_alpha",
         element: <Home />,
         errorElement: <ErrorPage />,
         index: true

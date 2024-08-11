@@ -16,7 +16,7 @@ export function ErrorPage() {
             <p>
                 <i>{error.statusText || error.message}</i>
             </p>
-            <Link to="/">Voltar</Link>
+            <Link to="/t_alpha">Voltar</Link>
         </div>
     )
 }
