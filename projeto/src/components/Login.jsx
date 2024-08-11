@@ -1,6 +1,6 @@
 import styles from './Login.module.css'
 import { Messages } from './utils/Messages';
-import { Link, replace, useNavigate, useOutletContext } from 'react-router-dom'
+import { Link, useNavigate, useOutletContext } from 'react-router-dom'
 import TextField from '@mui/material/TextField';
 import axios from 'axios';
 import { useState } from 'react';
@@ -12,6 +12,7 @@ export const Login = () => {
     const [messageContent, setMessageContent] = useState()
     const [loginData, setLoginData] = useState()
     const [errorArray, setErrorArray] = useState()
+    const [open, setOpen] = useState(false)
 
     const userContext = useOutletContext()
     const navigate = useNavigate()
@@ -26,8 +27,8 @@ export const Login = () => {
             method: 'POST',
             url: 'https://interview.t-alpha.com.br/api/auth/login',
             headers: { 'Content-Type': 'application/json' },
-            data: { taxNumber: `${loginData.taxNumber}`, password: `${parseInt(loginData.password)}` }
-        };
+            data: { taxNumber: loginData.taxNumber, password: loginData.password }
+        }
 
         try {
             const { data } = await axios.request(options);
@@ -46,14 +47,14 @@ export const Login = () => {
 
     return (
         <div className={styles.main} >
-                {messageType && (
-                    <Messages messageType={messageType} messageContent={messageContent} errorArray={errorArray} />
+                {(messageType && open) && (
+                    <Messages setErrorArray={setErrorArray} messageType={messageType} messageContent={messageContent} setOpen={setOpen} errorArray={errorArray} />
                 )}
             <h1 className={styles.title}><span className={styles.underline}>FAZER</span> LOGIN</h1>
             <form className={styles.formContainer} onSubmit={handleSubmit} >
-                <TextField onChange={handleChange} id="taxNumber" name="taxNumber" type='number' label="CPF ou CNPJ do usuário" variant="outlined" />
-                <TextField onChange={handleChange} id="password" name="password" label="Senha" type='Password' variant="outlined" />
-                <button type="submit"><i className='bx bx-log-in'></i>ENTRAR</button>
+                <TextField onChange={handleChange} type='number' inputProps={{ maxLength: 25 }} required id="taxNumber" name="taxNumber" label="CPF ou CNPJ do usuário" variant="outlined" />
+                <TextField onChange={handleChange} type='Password' inputProps={{ maxLength: 25 }} id="password" name="password" label="Senha" required variant="outlined" />
+                <button type="submit" onClick={()=> setOpen(true)}><i className='bx bx-log-in' ></i>ENTRAR</button>
             </form>
             <div className={styles.line}></div>
             <div className={styles.lowerDiv}>

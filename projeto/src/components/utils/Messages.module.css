@@ -1,3 +1,4 @@
+
 .main {
     position: absolute;
     top: 10px;
@@ -6,4 +7,5 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
+    z-index: 300;
 }

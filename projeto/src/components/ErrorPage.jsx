@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 
 export function ErrorPage() {
 
+    //Página para possíveis erros
+
     const error = useRouteError()
     console.error(error)
 
