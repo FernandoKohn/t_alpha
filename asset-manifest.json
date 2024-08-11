@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.f9b36ad6.css",
-    "main.js": "/static/js/main.b515cacc.js",
+    "main.css": "/static/css/main.24f9bf58.css",
+    "main.js": "/static/js/main.f8de0ba6.js",
     "static/media/Denso Regular.otf": "/static/media/Denso Regular.ce4fa7bb4955586d4315.otf",
     "static/media/Denso Bold.otf": "/static/media/Denso Bold.446e9d4848c6f69beedd.otf",
     "static/media/NimbusSanL-Reg.otf": "/static/media/NimbusSanL-Reg.a520cb1a50f044f5d58c.otf",
     "index.html": "/index.html",
-    "main.f9b36ad6.css.map": "/static/css/main.f9b36ad6.css.map",
-    "main.b515cacc.js.map": "/static/js/main.b515cacc.js.map"
+    "main.24f9bf58.css.map": "/static/css/main.24f9bf58.css.map",
+    "main.f8de0ba6.js.map": "/static/js/main.f8de0ba6.js.map"
   },
   "entrypoints": [
-    "static/css/main.f9b36ad6.css",
-    "static/js/main.b515cacc.js"
+    "static/css/main.24f9bf58.css",
+    "static/js/main.f8de0ba6.js"
   ]
 }
