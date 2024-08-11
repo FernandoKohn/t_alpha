@@ -4,7 +4,7 @@ Aplicação desenvolvida para etapa de entrevista da empresa t-Alpha, por Fernan
 
 ## Conceito
 
-Up visa demonstrar um mock-up de uma verdadeiro web-negocio ou web-application funcionando e pronto para ser integrado com banco de dados, utilizando Api rest como core de seu funcionamento.
+Up visa demonstrar um mock-up de uma verdadeiro web-negócio ou web-application funcionando e pronto para ser integrado com banco de dados, utilizando Api rest como core de seu funcionamento.
 
 ## Como funciona
 
